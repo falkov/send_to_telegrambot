@@ -1,8 +1,8 @@
 import telepot
 import sys
 
-token = 'здесь токен'
-chat_id = 12345678
+token = '585930160:AAESsCh16tE2bUEsnQJZoRxQLz9xAi3Zb3U'
+chat_id = 85623632
 
 TelegramBot = telepot.Bot(token)
 

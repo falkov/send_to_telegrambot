@@ -1,14 +1,11 @@
 import telepot
 import sys
-
-token = '585930160:AAESsCh16tE2bUEsnQJZoRxQLz9xAi3Zb3U'
-chat_id = 85623632
-
-TelegramBot = telepot.Bot(token)
+import _falkov_params as _fp
 
 
 def send_message_to_telegrambot(message):
-    TelegramBot.sendMessage(chat_id, message)
+    telegram_bot = telepot.Bot(_fp.tel_token)
+    telegram_bot.sendMessage(_fp.tel_chat_id, message)
 
 
 if __name__ == "__main__":
